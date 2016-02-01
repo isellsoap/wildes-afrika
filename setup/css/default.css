@@ -1,0 +1,1539 @@
+@charset 'utf-8';
+
+/*
+ * GENERAL ADJUSTMENTS
+ * ###########################################################################
+ * ###########################################################################
+ * ###########################################################################
+ */
+
+/*
+ * Global reset for all HTML elements
+ * ###########################################################################
+ */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * HTML5 display definitions
+ * ###########################################################################
+ */
+
+/*
+ * Corrects block display not defined in IE8/9 & FF3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/*
+ * Basic background color, text color and font settings
+ * ###########################################################################
+ */
+
+html,
+button,
+input,
+form {
+	font: 100%/1.5 'PT Sans', Georgia, serif;
+}
+
+body {
+	background: transparent url(savanne.jpg) no-repeat center center fixed;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #333;
+	-moz-transition: background-image .5s linear;
+	-webkit-transition: background-image .5s linear;
+	transition: background-image .5s linear;
+}
+
+.impress-on-introVomIntro {
+	background: #fff url(whiteBackground.jpg) no-repeat center center fixed;
+	-moz-transition: background .5s linear;
+	-webkit-transition: background .5s linear;
+	transition: background .5s linear;
+}
+
+.impress-on-dschungel,
+.impress-on-dschungel-tier-1,
+.impress-on-dschungel-tier-2 {
+	background: transparent url(dschungel.jpg) no-repeat center center fixed;
+	-moz-transition: background .5s linear;
+	-webkit-transition: background .5s linear;
+	transition: background .5s linear;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.impress-on-wueste {
+	background: transparent url(wueste.png) no-repeat center center fixed;
+	-moz-transition: background .5s linear;
+	-webkit-transition: background .5s linear;
+	transition: background .5s linear;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/*
+ * Headings
+ * ###########################################################################
+ */
+
+/*
+ * 1. Cross-browser kerning-pairs & ligatures.
+ *    @see: http://aestheticallyloyal.com/public/optimize-legibility/
+ */
+
+h1,
+h2,
+h3 {
+	color: #222;
+	font-family: 'Berkshire Swash', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: .5em;
+	text-rendering: optimizeLegibility; /* 1 */
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+/*
+ * Links
+ * ###########################################################################
+ */
+
+a {
+	color: #b32b12;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ * @see: people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:focus,
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*
+ * Lists
+ * ###########################################################################
+ */
+
+ol,
+ul {
+	margin-left: 1em;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ol ol {
+	list-style-type: lower-latin;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ul ul {
+	list-style-type: circle;
+}
+
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+dt {
+	font-weight: 700;
+}
+
+li {
+	margin-left: .8em;
+}
+
+/*
+ * Text-level formatting
+ * ###########################################################################
+ */
+
+ i {
+ 	font-style: italic;
+ }
+
+ .giraffeHelp.show .bubble ul,
+ p {
+	font-size: 1.7em;
+	margin-top: 1em;
+}
+
+.giraffeHelp.show .bubble p {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1em;
+}
+
+.giraffeHelp.show ul,
+.giraffeHelp.show li {
+	margin-left: 0;
+}
+
+.giraffeHelp.show ul {
+	list-style-type: none;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+/*
+ * Avoids visible outlines in Webkit browsers.
+ */
+
+div,
+div:target {
+	outline: 0;
+}
+
+/*
+ * Forms
+ * ###########################################################################
+ */
+
+input[type='text'] {
+	-moz-background-clip: padding;
+	-ms-background-clip: padding-box;
+	-o-background-clip: padding-box;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+	background-color: #fff;
+	border: 1px solid;
+	border-color: #999 #bbb #ddd;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 2em;
+	height: 1.8em;
+	line-height: normal;
+	padding: 2px .5em;
+	vertical-align: top;
+}
+
+input[type='text']:hover {
+	background-color: #f5f5f5;
+}
+
+input[type='text']:focus {
+	background-color: #fff;
+	border-color: #0068c4;
+	box-shadow: #0068c4 0 0 .5em 0;
+	outline: 0;
+	z-index: 1;
+}
+
+/*
+ * Embedded content
+ * ###########################################################################
+ */
+
+figure {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+figcaption {
+	color: #888;
+	font-size: .875em;
+	font-style: italic;
+	padding: 1em .75em 0;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+/*
+ * USEFUL CLASSES
+ * ###########################################################################
+ * ###########################################################################
+ * ###########################################################################
+ */
+
+/*
+ * “A new micro clearfix hack” by Nicolas Gallagher.
+ * @see: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
+.cf::before,
+.cf::after {
+	content: '';
+	display: table;
+}
+
+.cf::after {
+	clear: both;
+}
+
+/*
+ * New image replacement technique.
+ * @see: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+ */
+
+.hidden {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+/*
+ * BASIC SLIDE SETTINGS
+ * ###########################################################################
+ * ###########################################################################
+ * ###########################################################################
+ */
+
+.step {
+	background: rgba(255,255,255,.75);
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 750px;
+	padding: .5em 2em;
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+
+.impress-enabled .step {
+	margin: 0;
+	opacity: 0;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.impress-enabled .step.active {
+	opacity: 1;
+}
+
+/*
+ * CONTROLS
+ * ###########################################################################
+ * ###########################################################################
+ * ###########################################################################
+ */
+
+.aux-breadcrumb,
+.aux-controls {
+	position: absolute;
+	z-index: 30001;
+}
+
+.aux-breadcrumb,
+.aux-controls {
+	top: .5em;
+}
+
+.aux-breadcrumb {
+	left: .5em;
+	margin: 0;
+}
+
+.aux-controls {
+	right: .5em;
+}
+
+.aux-controls a {
+	display: inline-block;
+}
+
+.impress-on-introVomIntro .aux-breadcrumb,
+.impress-on-introVomIntro .aux-controls {
+	display: none;
+}
+
+.impress-on-intro .aux-breadcrumb {
+	display: none;
+}
+
+#introVomIntro {
+	padding-top: 3em;
+}
+
+#introVomIntro {
+	text-align: center;
+	opacity: 0;
+	color: #333;
+}
+
+#introVomIntro p {
+	opacity: 0;
+}
+
+.impress-on-introVomIntro #introVomIntro {
+	opacity: 1;
+	-webkit-transition: opacity 1s 2s;
+}
+
+.impress-on-introVomIntro #introVomIntro p {
+	-webkit-transition: opacity 2s 6s;
+	-moz-transition: opacity 2s 6s;
+
+	-moz-animation: pulsierend 4s infinite;
+	-webkit-animation: pulsierend 4s infinite;
+	animation: pulsieren 4s infinite;
+
+	-webkit-animation-delay: 7s;
+	-moz-animation-delay: 7s;
+
+	opacity: .25;
+}
+
+@-webkit-keyframes pulsierend {
+    0% { opacity: .25; }
+		50% { opacity: 1; }
+    100% { opacity: .25; }
+}
+@-moz-keyframes pulsierend {
+     0% { opacity: .25; }
+		50% { opacity: 1; }
+    100% { opacity: .25; }
+}
+@keyframes pulsierend {
+    0% { opacity: .25; }
+		50% { opacity: 1; }
+    100% { opacity: .25; }
+}
+
+.icon {
+	background: url('../img/btn_icons_ext.png') no-repeat 0 0;
+	display: block;
+	text-indent: -9999px;
+	width: 62px;
+	height: 62px;
+}
+
+.icon.sound { background-position: 0 0; }
+.icon.sound.paused { background-position: 0 -69px; }
+.icon.music { background-position: -207px 0; }
+.icon.music.paused { background-position: -207px -69px; }
+.icon.help { background-position: -136px -69px; }
+.icon.back { background-position: -68px 0; }
+.icon.close { background-position: -69px -137px; }
+.icon.reload { background-position: -138px 0; }
+.icon.reload:hover {
+	-webkit-transform: rotate(720deg);
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transform: rotate(720deg);
+	-moz-transition: all 2s ease-in-out;
+}
+
+
+/*
+ * SINGLE SLIDES
+ * ###########################################################################
+ * ###########################################################################
+ * ###########################################################################
+ */
+
+#intro {
+	background: transparent;
+}
+
+#mainMenu {
+	background: transparent;
+}
+
+#mainMenu ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+#mainMenu li {
+	bottom: 3em;
+	margin: 0;
+	position: absolute;
+}
+
+#spielen a,
+#mainMenu a {
+	position: relative;
+	display: block;
+	-moz-transform: scale(.8);
+	-webkit-transform: scale(.8);
+	transform: scale(.8);
+	-moz-transition: -webkit-transform .3s linear;
+	-webkit-transition: -webkit-transform .3s linear;
+	transition: -webkit-transform .3s linear;
+}
+
+#spielen a:hover,
+#mainMenu a:hover {
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-moz-transition: -webkit-transform .1s linear;
+	-webkit-transition: -webkit-transform .1s linear;
+	transition: -webkit-transform .1s linear;
+}
+
+#mainMenu .entdecken {
+	left: 2em;
+}
+
+#spielen a:hover,
+#mainMenu .entdecken a:hover {
+	-moz-transform: rotate(-3deg) translateY(-10px);
+	-webkit-transform: rotate(-3deg) translateY(-10px);
+	transform: rotate(-3deg) translateY(-10px);
+}
+
+#mainMenu .spielen {
+	right: 2em;
+}
+
+#mainMenu .spielen a:hover {
+	-moz-transform: rotate(3deg) translateY(-10px);
+	-webkit-transform: rotate(3deg) translateY(-10px);
+	transform: rotate(3deg) translateY(-10px);
+}
+
+#mainMenu p {
+	background: #fff;
+	padding: 1em;
+	margin-bottom: 2em;
+	border-radius: .5em;
+	text-align: center;
+	position: relative;
+	width: 394px;
+	-webkit-transform: translate3D(0, 0, 0);
+	-moz-animation: raufRunter 4s infinite;
+	-webkit-animation: raufRunter 4s infinite;
+	animation: raufRunter 4s infinite;
+}
+
+#mainMenu p:after {
+	top: 98%;
+	border: solid transparent;
+	border-top-color: #fff;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-width: 30px;
+	left: 50%;
+	margin-left: -30px;
+}
+
+@-webkit-keyframes raufRunter {
+	0% { margin-bottom: 2em; }
+	50% { margin-bottom: 2.5em; }
+	100% { margin-bottom: 2em; }
+}
+
+@-moz-keyframes raufRunter {
+	0% { margin-bottom: 2em; }
+	50% { margin-bottom: 2.5em; }
+	100% { margin-bottom: 2em; }
+}
+
+@keyframes raufRunter {
+	0% { margin-bottom: 2em; }
+	50% { margin-bottom: 2.5em; }
+	100% { margin-bottom: 2em; }
+}
+
+.impress-on-spielen #impress {
+	position: relative;
+	z-index: 1000;
+}
+
+#spielen ul,
+#spielen li {
+	margin: 0;
+}
+
+#spielen ul {
+	list-style-type: none;
+	margin-top: 6em;
+
+	position: relative;
+}
+
+#spielen li {
+	margin-bottom: .5em;
+}
+
+#spielen a:hover:before {
+	content: '';
+	background: #fff;
+	padding: 1em;
+	margin-bottom: 2em;
+	border-radius: .5em;
+	text-align: center;
+	position: absolute;
+	right: 100px;
+	top: 0;
+	width: 350px;
+	color: #333;
+	font-size: 1.25em;
+}
+
+#spielen .tiere-raten a:hover:before {
+	content: 'Kennst du schon alle Merkmale der Tiere? Teste hier dein Wissen, indem du die Tiere ihren Eigenschaften zuordnest.';
+}
+
+#spielen .schatten-raten a:hover:before {
+	content: 'Erkennst du die Tiere auch an ihrem Schatten? Klicke einfach den richtigen Namen des Tieres an.';
+}
+
+#spielen .stimmen-raten a:hover:before {
+	content: 'Weißt du wie sich ein Löwe oder ein Gorilla anhört? Finde hier das richtige Geräusch. Hör’ genau hin!';
+}
+
+#spielen .input-spiel a:hover:before {
+	content: 'Kombiere alles was du bisher gelernt hast und finde die richtige Antwort. Trage den Namen des Tieres ein, wenn du es erkennst.';
+}
+
+#spielen a:hover:after {
+	top: 50%;
+	border: solid transparent;
+	border-right-color: #fff;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-width: 24px;
+	right: 480px;
+	margin-top: -18px;
+}
+
+/*
+    The last step is an overview.
+    There is no content in it, so we make sure it's not visible because we want
+    to be able to click on other steps.
+
+*/
+#overview { display: none }
+
+/*
+    We also make other steps visible and give them a pointer cursor using the
+    `impress-on-` class.
+*/
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*
+ * Memory
+ * ###########################################################################
+ * ###########################################################################
+ * ###########################################################################
+ */
+
+.controls {
+	font-size: 16px;
+	float: right;
+	width: 25%;
+}
+
+.controls ul {
+	list-style-type: none;
+}
+
+.controls li {
+	margin-bottom: .5em;
+}
+
+#cards,
+#cards * {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#cards {
+	float: left;
+	list-style-type: none;
+	width: 80%;
+	margin: 6em 0 0 0;
+}
+
+#cards li {
+	float: left;
+	width: 170px;
+	height: 170px;
+	background: rgba(255, 255, 255, .8);
+	margin: .5em;
+	cursor: pointer;
+}
+
+@-webkit-keyframes spaceboots {
+	0%   { -webkit-transform: translate(2px, 1px)   rotate(0deg); }
+	10%  { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20%  { -webkit-transform: translate(-3px, 0px)  rotate(1deg); }
+	30%  { -webkit-transform: translate(0px, 2px)   rotate(0deg); }
+	40%  { -webkit-transform: translate(1px, -1px)  rotate(1deg); }
+	50%  { -webkit-transform: translate(-1px, 1px)  rotate(-1deg); }
+	60%  { -webkit-transform: translate(-3px, -2px)  rotate(0deg); }
+	70%  { -webkit-transform: translate(2px, 1px)   rotate(-1deg); }
+	80%  { -webkit-transform: translate(-1px, -2px) rotate(1deg); }
+	90%  { -webkit-transform: translate(2px, -1px)   rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px)  rotate(-1deg); }
+}
+
+@-moz-keyframes spaceboots {
+	0%   { -moz-transform: translate(2px, 1px)   rotate(0deg); }
+	10%  { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+	20%  { -moz-transform: translate(-3px, 0px)  rotate(1deg); }
+	30%  { -moz-transform: translate(0px, 2px)   rotate(0deg); }
+	40%  { -moz-transform: translate(1px, -1px)  rotate(1deg); }
+	50%  { -moz-transform: translate(-1px, 1px)  rotate(-1deg); }
+	60%  { -moz-transform: translate(-3px, -2px)  rotate(0deg); }
+	70%  { -moz-transform: translate(2px, 1px)   rotate(-1deg); }
+	80%  { -moz-transform: translate(-1px, -2px) rotate(1deg); }
+	90%  { -moz-transform: translate(2px, -1px)   rotate(0deg); }
+	100% { -moz-transform: translate(1px, -2px)  rotate(-1deg); }
+}
+
+
+/**
+ * Apply the aforementioned animation to the following pseudo-selectors:
+ *
+ * NB: Normally, we'd just use the class e.g. '.shake', but for this demo, I'm also applying it to all links.
+ * To all intents and purposes, you can pretty much apply this to anything (read the tutorial for more info)
+ */
+.shakeIt {
+	-webkit-animation-name: 'spaceboots';
+	-webkit-animation-duration: .8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: 'spaceboots';
+	-moz-animation-duration: .8s;
+	-moz-transform-origin:50% 50%;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: linear;
+}
+
+#cards li:hover {
+	background: rgba(255, 255, 255, .95);
+}
+
+#cards div {
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+
+#cards div[data-id="1a"], #cards div[data-id="1b"],
+#cards div[data-id="2a"], #cards div[data-id="2b"],
+#cards div[data-id="3a"], #cards div[data-id="3b"],
+#cards div[data-id="4a"], #cards div[data-id="4b"],
+#cards div[data-id="5a"], #cards div[data-id="5b"],
+#cards div[data-id="6a"], #cards div[data-id="6b"],
+#cards div[data-id="7a"], #cards div[data-id="7b"],
+#cards div[data-id="8a"], #cards div[data-id="8b"],
+#cards div[data-id="9a"], #cards div[data-id="9b"],
+#cards div[data-id="10a"], #cards div[data-id="10b"],
+#cards div[data-id="11a"], #cards div[data-id="11b"],
+#cards div[data-id="12a"], #cards div[data-id="12b"],
+#cards div[data-id="13a"], #cards div[data-id="13b"],
+#cards div[data-id="14a"], #cards div[data-id="14b"],
+#cards div[data-id="15a"], #cards div[data-id="15b"],
+#cards div[data-id="16a"], #cards div[data-id="16b"] {
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+#cards div[data-id="1a"]  { background-image: url(../img/tiere/adler-thumb.jpg); }
+#cards div[data-id="2a"] { background-image: url(../img/tiere/dromedar-thumb.jpg); }
+#cards div[data-id="3a"] { background-image: url(../img/tiere/gorilla-thumb.jpg); }
+#cards div[data-id="4a"] { background-image: url(../img/tiere/skorpion-thumb.jpg); }
+#cards div[data-id="5a"] { background-image: url(../img/tiere/schimpanse-thumb.jpg); }
+#cards div[data-id="6a"] { background-image: url(../img/tiere/antilope-thumb.jpg); }
+#cards div[data-id="7a"] { background-image: url(../img/tiere/bueffel-thumb.jpg); }
+#cards div[data-id="8a"] { background-image: url(../img/tiere/elefant-thumb.jpg); }
+#cards div[data-id="9a"] { background-image: url(../img/tiere/erdmaennchen-thumb.jpg); }
+#cards div[data-id="10a"] { background-image: url(../img/tiere/geier-thumb.jpg); }
+#cards div[data-id="11a"] { background-image: url(../img/tiere/loewe-thumb.jpg); }
+#cards div[data-id="12a"] { background-image: url(../img/tiere/hyaene-thumb.jpg); }
+#cards div[data-id="13a"] { background-image: url(../img/tiere/nashorn-thumb.jpg); }
+#cards div[data-id="14a"] { background-image: url(../img/tiere/zebra-thumb.jpg); }
+#cards div[data-id="15a"] { background-image: url(../img/tiere/wuestenfuchs-thumb.jpg); }
+#cards div[data-id="16a"] { background-image: url(../img/tiere/giraffe-thumb.jpg); }
+
+#cards div[data-id="1b"]  { background-image: url(../img/tiere/adler-eigenschaften.png); }
+#cards div[data-id="2b"] { background-image: url(../img/tiere/dromedar-eigenschaften.png); }
+#cards div[data-id="3b"] { background-image: url(../img/tiere/gorilla-eigenschaften.png); }
+#cards div[data-id="4b"] { background-image: url(../img/tiere/skorpion-eigenschaften.png); }
+#cards div[data-id="5b"] { background-image: url(../img/tiere/schimpanse-eigenschaften.png); }
+#cards div[data-id="6b"] { background-image: url(../img/tiere/antilope-eigenschaften.png); }
+#cards div[data-id="7b"] { background-image: url(../img/tiere/bueffel-eigenschaften.png); }
+#cards div[data-id="8b"] { background-image: url(../img/tiere/elefant-eigenschaften.png); }
+#cards div[data-id="9b"] { background-image: url(../img/tiere/erdmaennchen-eigenschaften.png); }
+#cards div[data-id="10b"] { background-image: url(../img/tiere/geier-eigenschaften.png); }
+#cards div[data-id="11b"] { background-image: url(../img/tiere/loewe-eigenschaften.png); }
+#cards div[data-id="12b"] { background-image: url(../img/tiere/hyaene-eigenschaften.png); }
+#cards div[data-id="13b"] { background-image: url(../img/tiere/nashorn-eigenschaften.png); }
+#cards div[data-id="14b"] { background-image: url(../img/tiere/zebra-eigenschaften.png); }
+#cards div[data-id="15b"] { background-image: url(../img/tiere/wuestenfuchs-eigenschaften.png); }
+#cards div[data-id="16b"] { background-image: url(../img/tiere/giraffe-eigenschaften.png); }
+
+.opacity {
+	-moz-animation: pulse 1s 1;
+	-webkit-animation: pulse 1s 1;
+	animation: pulse 1s 1;
+	opacity: .75;
+	-webkit-transform: translate3D(0, 0, 0);
+}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/*
+ * GIRAFFE
+ * ###########################################################################
+ * ###########################################################################
+ * ###########################################################################
+ */
+
+.giraffeMain[data-length="0"] { bottom: -710px; }
+.giraffeMain[data-length="1"] { bottom: -669px; }
+.giraffeMain[data-length="2"] { bottom: -628px; }
+.giraffeMain[data-length="3"] { bottom: -587px; }
+.giraffeMain[data-length="4"] { bottom: -546px; }
+.giraffeMain[data-length="5"] { bottom: -505px; }
+.giraffeMain[data-length="6"] { bottom: -464px; }
+.giraffeMain[data-length="7"] { bottom: -423px; }
+.giraffeMain[data-length="8"] { bottom: -402px; }
+.giraffeMain[data-length="9"] { bottom: -355px; }
+.giraffeMain[data-length="10"] {
+	bottom: -951px;
+	-webkit-animation: holDenZweig 5s 1 !important;
+	-moz-animation: holDenZweig 5s 1 !important;
+}
+
+@-webkit-keyframes holDenZweig {
+	0% { bottom: -355px; -webkit-transform: rotate(0); }
+	30% { bottom: -260px; -webkit-transform: rotate(3deg); }
+	35% { bottom: -260px; -webkit-transform: rotate(0); }
+	40% { bottom: -260px; -webkit-transform: rotate(3deg); }
+	50% { bottom: -260px; -webkit-transform: rotate(-1deg); }
+	55% { bottom: -260px; -webkit-transform: rotate(2deg); }
+	60% { bottom: -260px; -webkit-transform: rotate(-2deg); }
+	80% { bottom: -260px; -webkit-transform: rotate(0); }
+	90% { bottom: -355px; -webkit-transform: rotate(0); }
+	100% { bottom: -951px; -webkit-transform: rotate(0); }
+}
+
+@-moz-keyframes holDenZweig {
+	0% { bottom: -10px; -moz-transform: rotate(0); }
+	30% { bottom: -5px; -moz-transform: rotate(3deg); }
+	35% { bottom: -5px; -moz-transform: rotate(0); }
+	40% { bottom: -5px; -moz-transform: rotate(3deg); }
+	50% { bottom: -5px; -moz-transform: rotate(-1deg); }
+	55% { bottom: -5px; -moz-transform: rotate(2deg); }
+	60% { bottom: -5px; -moz-transform: rotate(-2deg); }
+	80% { bottom: -5px; -moz-transform: rotate(0); }
+	90% { bottom: -10px; -moz-transform: rotate(0); }
+	100% { bottom: -100%; -moz-transform: rotate(0); }
+}
+
+.zweig {
+	height: 219px;
+	width: 200px;
+	position: absolute;
+	right: -200px;
+	top: -20px;
+	-webkit-transform: translateZ(0);
+	-webkit-animation: fadeOutZweig 1s 1;
+	-moz-animation: fadeOutZweig 1s 1;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	z-index: 997;
+}
+
+.zweig.showZweigOnHelp.showZweig,
+.zweig[data-length="0"] {
+	top: -20px;
+	-webkit-transform: rotate(0) scale(1);
+}
+
+.zweig.showZweigOnHelp.showZweig {
+	top: -20px;
+	right: 0;
+	-webkit-transform: rotate(0) scale(1);
+	z-index: 20001;
+}
+
+.zweig[data-length="1"] {
+	top: 20px;
+	right: 70px !important;
+	-webkit-transform: rotate(6deg) scale(1.5);
+
+}
+
+.impress-on-intro .zweig,
+.impress-on-spielen .zweig,
+.impress-on-bilder-erraten .zweig,
+.impress-on-formen-erkennen .zweig,
+.impress-on-geraeusche-zuordnen .zweig,
+.impress-on-input .zweig {
+	-webkit-animation: fadeInZweig 1.25s 1;
+	-moz-animation: fadeInZweig 1.25s 1;
+	right: 0;
+}
+
+.giraffeMain {
+	height: 0;
+	position: absolute;
+	width: 283px;
+	right: 0;
+	bottom: -500px;
+	z-index: 998;
+	-webkit-transform: translateZ(0);
+	-webkit-transition: bottom .3s linear;
+	-webkit-animation: fadeOut 1s 1;
+	-moz-transition: bottom .3s linear;
+	-moz-animation: fadeOut 1s 1;
+}
+
+.impress-on-intro .zweig {
+	right: 0;
+}
+
+.impress-on-intro .giraffeMain {
+	bottom: -500px;
+}
+
+/* Fade-in logo effect */
+
+@-webkit-keyframes fadeIn {
+	0%, 50% { height: 0; }
+	100% { height: 951px; }
+}
+
+@-moz-keyframes fadeIn {
+	0%, 50% { height: 0; }
+	100% { height: 951px; }
+}
+
+@-webkit-keyframes fadeOut {
+	0% { height: 951px; }
+	100% { height: 0; }
+}
+
+@-moz-keyframes fadeOut {
+	0% { height: 951px; }
+	100% { height: 0; }
+}
+
+/* Fade-in zweig */
+
+@-webkit-keyframes fadeInZweig {
+	0%, 50% { right: -200px; }
+	100% { right: 0; }
+}
+
+@-moz-keyframes fadeInZweig {
+	0%, 50% { right: -200px; }
+	100% { right: 0; }
+}
+
+@-webkit-keyframes fadeOutZweig {
+	0% { right: 0; }
+	100% { right: -200px; }
+}
+
+@-moz-keyframes fadeOutZweig {
+	0% { right: 0; }
+	100% { right: -200px; }
+}
+
+.impress-on-intro .giraffeMain,
+.impress-on-spielen .giraffeMain,
+.impress-on-bilder-erraten .giraffeMain,
+.impress-on-formen-erkennen .giraffeMain,
+.impress-on-geraeusche-zuordnen .giraffeMain,
+.impress-on-input .giraffeMain {
+	-webkit-animation: fadeIn 1.25s 1;
+	-moz-animation: fadeIn 1.25s 1;
+	height: 951px;
+}
+
+.showGiraffeOnHelp {
+	-webkit-animation: fadeIn .2s 1;
+	-moz-animation: fadeIn .2s 1;
+	height: 951px;
+	bottom: -500px !important;
+	z-index: 9999999;
+}
+
+.showGiraffeOnHelp.giraffeAnimation {
+	bottom: -200px !imporant;
+	-webkit-animation: giraffeAnimation 6s infinite;
+	-moz-animation: giraffeAnimation 6s infinite;
+}
+
+@-webkit-keyframes giraffeAnimation {
+    0% { bottom: -500px; }
+	50% { bottom: -200px; }
+    100% { bottom: -500px; }
+}
+@-moz-keyframes giraffeAnimation {
+    0% { bottom: -500px; }
+	50% { bottom: -200px; }
+    100% { bottom: -500px; }
+}
+@keyframes giraffeAnimation {
+    0% { bottom: -500px; }
+	50% { bottom: -200px; }
+    100% { bottom: -500px; }
+}
+
+#geraeusche-zuordnen,
+#formen-erkennen {
+	padding: 4em;
+}
+
+#geraeusche-zuordnen h2,
+#formen-erkennen h2 {
+	font-size: 3em;
+	margin: -.5em 0 1em;
+	text-align: center;
+}
+
+#geraeusche-zuordnen h3,
+#formen-erkennen h3 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+#geraeusche-zuordnen div,
+#formen-erkennen div {
+	background: rgba(255, 255, 255, .9);
+	border-radius: 1em;
+	padding: 2em 2em 1px 2em;
+}
+
+#geraeusche-zuordnen ul,
+#geraeusche-zuordnen li,
+#formen-erkennen ul,
+#formen-erkennen li {
+	margin-left: 0;
+}
+
+#geraeusche-zuordnen ul,
+#formen-erkennen ul {
+	list-style-type: none;
+}
+
+#geraeusche-zuordnen li,
+#formen-erkennen li {
+	margin-bottom: 1.5em;
+	padding: .5em;
+	position: relative;
+}
+
+#geraeusche-zuordnen .icon,
+#formen-erkennen ul span {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+#geraeusche-zuordnen input,
+#formen-erkennen input {
+	height: 62px;
+	line-height: 62px;
+	display: inline-block;
+	float: left;
+}
+
+#geraeusche-zuordnen .error,
+#formen-erkennen .error {
+	background: rgba(191, 21, 21, .1);
+	outline: .25em solid rgba(191, 21, 21, .75);
+	color: #BF1515;
+}
+
+#geraeusche-zuordnen .success,
+#formen-erkennen .success {
+	background: rgba(0, 120, 40, .1);
+	outline: .25em solid rgba(0, 120, 40, .75);
+	color: #007828;
+}
+
+#geraeusche-zuordnen .error:after,
+#geraeusche-zuordnen .success:after {
+	position: absolute;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-top: .8em;
+	top: 0;
+	left: 5em;
+	width: 100%;
+	height: 100%;
+}
+
+#geraeusche-zuordnen .error:after {
+	content: 'Leider falsch …';
+}
+
+#geraeusche-zuordnen .success:after {
+	content: 'Super, das war richtig!';
+}
+
+#formen-erkennen h3 {
+	margin-bottom: 2em;
+}
+
+#formen-erkennen div {
+	padding-bottom: 2em;
+}
+
+#formen-erkennen input {
+	height: 1.5em;
+}
+
+#formen-erkennen ul {
+	position: relative;
+	z-index: 0;
+}
+
+#formen-erkennen ul span {
+	font-size: 1.5em;
+	margin-top: -.2em;
+}
+
+#formen-erkennen img {
+	float: left;
+	margin-right: 4em;
+	position: relative;
+	z-index: 1;
+}
+
+.step,
+#dschungel {
+	background: transparent;
+}
+
+ul.tiersteckbriefe {
+	bottom: 10em;
+	list-style-type: none;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+ul.tiersteckbriefe li,
+ul.tiersteckbriefe a {
+	float: left;
+}
+
+ul.tiersteckbriefe li {
+	width: 200px;
+	margin: .5em;
+}
+
+ul.tiersteckbriefe a {
+	background: rgba(0, 0, 0, .7);
+	padding: 1em;
+	width: 100%;
+	height: 200px;
+	color: #fff;
+}
+
+ul.tiersteckbriefe a:hover {
+	background: rgba(0, 0, 0, .8);
+}
+
+#mainSound {
+	margin: 0;
+}
+
+.bubble {
+	background: rgba(255, 255, 255, .9);
+	border-radius: 2em;
+	padding: 2em;
+	width: 75%;
+	margin: 0;
+}
+
+.bubble h1 {
+	font-size: 3.5em;
+	margin-bottom: .6em;
+	text-align: center;
+}
+
+.bubble .linkToMainMenu {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+.linkToMainMenu a {
+	display: block;
+	-moz-transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-moz-transition: -webkit-transform .3s linear;
+	-webkit-transition: -webkit-transform .3s linear;
+}
+
+.linkToMainMenu a:hover {
+	-moz-transform: rotate(-3deg) translateY(-10px) scale(1);
+	-webkit-transform: rotate(-3deg) translateY(-10px) scale(1);
+	-moz-transition: -webkit-transform .1s linear;
+	-webkit-transition: -webkit-transform .1s linear;
+}
+
+#entdecken {
+	text-align: center;
+	position: relative;
+}
+
+#entdecken h2 {
+	font-size: 3em;
+	margin: .5em 0 1em;
+}
+
+#entdecken ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+#entdecken li {
+	margin: 0;
+}
+
+#entdecken a {
+	font-size: 2em;
+	font-weight: 700;
+	position: absolute;
+	padding: 2em;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-webkit-font-smoothing: antialiased;
+	-webkit-transform: translateZ(0);
+}
+
+#entdecken a[href="#wueste"] {
+	color: #333;
+	top: 5.5em;
+	left: 11em;
+	-webkit-transform: rotate(7deg);
+	-webkit-transition: all .1s ease-in;
+	-webkit-font-smoothing: antialiased;
+	-moz-transform: rotate(7deg);
+	-moz-transition: all .1s ease-in;
+}
+
+#entdecken a[href="#wueste"]:hover {
+	text-shadow: 0 0 1em #fff;
+	-webkit-transform: rotate(7deg) scale(1.5);
+	-moz-transform: rotate(7deg) scale(1.5);
+}
+
+#entdecken a[href="#dschungel"] {
+	color: #fff;
+	top: 11em;
+	left: 13em;
+	-webkit-transform: rotate(7deg);
+	-webkit-transition: all .1s ease-in;
+	-webkit-font-smoothing: antialiased;
+	-moz-transform: rotate(7deg);
+	-moz-transition: all .1s ease-in;
+}
+
+#entdecken a[href="#dschungel"]:hover {
+	text-shadow: 0 0 1em #000;
+	-webkit-transform: rotate(7deg) scale(1.5);
+	-moz-transform: rotate(7deg) scale(1.5);
+}
+
+#entdecken a[href="#savanne"] {
+	color: #000;
+	top: 16.5em;
+	left: 13.5em;
+	-webkit-transform: rotate(7deg);
+	-webkit-transition: all .1s ease-in;
+	-webkit-font-smoothing: antialiased;
+	-moz-transform: rotate(7deg);
+	-moz-transition: all .1s ease-in;
+}
+
+#entdecken a[href="#savanne"]:hover {
+	text-shadow: 0 0 1em #fff;
+	-webkit-transform: rotate(7deg) scale(1.5);
+	-moz-transform: rotate(7deg) scale(1.5);
+}
+
+.giraffeHelp,
+.tiersteckbrief {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.giraffeHelp.show,
+.tiersteckbrief.show {
+	background: rgba(0,0,0,.6);
+	display: block;
+	z-index: 10000;
+	position: relative;
+}
+
+.giraffeHelp.show {
+	background: rgba(0,0,0,.75);
+	z-index: 20000;
+}
+
+/* Giraffen-Hilfe */
+
+.giraffeHelp.show {
+	padding: 6em 0 0 3em;
+}
+
+.giraffeHelp.show .bubble {
+	background: #fff;
+	border-radius: 1em;
+	padding: 1.5em;
+}
+
+.giraffeHelp.show .bubble p {
+	margin: 0;
+}
+
+.tiersteckbrief.show .inner {
+	background: transparent url(../img/brett_quer.png) no-repeat 0 0;
+	width: 750px;
+	height: 532px;
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	margin: -266px 0 0 -375px;
+	z-index: 10001;
+}
+
+.tiersteckbrief.show .inner::before {
+	width: 312px;
+	height: 164px;
+	position: absolute;
+	top: -15%;
+	left: 50%;
+	margin-left: -156px;
+	content: '';
+background: transparent url(../img/klemme.png) no-repeat center 90%;
+z-index: 10005;
+}
+
+.tiersteckbrief.show .tierdaten {
+	width: 700px;
+	height: 425px;
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+	bottom: 8%;
+	background: transparent url(../img/zettel_quer.png) no-repeat center 0;
+	padding: 2.5em 3em 2em 4em;
+	z-index: 1;
+}
+
+.tierdaten div.sound {
+	position: absolute;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	top: -6em;
+	left: -6em;
+	box-shadow: 0 0 1em #000;
+	width: 250px;
+	height: 180px;
+}
+
+.tierdaten div.sound a {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: inline;
+}
+.tierdaten h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.tierdaten ul {
+	font-size: 1.125em;
+	margin-top: 1.5em;
+}
+
+.tierdaten li {
+	margin-bottom: .2em;
+}
+
+.tiersteckbrief.show .video {
+	width: 100px;
+	height: 397px;
+	z-index: 0;
+	background: transparent url(../img/filmstreifen.png) no-repeat 0 0;
+	-moz-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	position: absolute;
+	top: 0;
+	right: 2%;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	text-indent: -9999px;
+}
+
+.tierdaten video {
+	width: 100%;
+}
+
+.tiersteckbrief.show .closeVideo {
+	float: right;
+}
+
+.tiersteckbrief.show .tierdaten div.videothings {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -13%;
+	left: 0;
+	z-index: 999999999;
+}
+
+.tiersteckbrief.show .tierdaten div.videothings2 {
+	top: 0;
+	left: 0;
+	z-index: 999999999;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.tiersteckbrief.show .tierdaten div.videothings2 img {
+	display: block;
+	margin-left: 9.25em;
+	border-top: 2em solid #fff;
+}
+
+.tiersteckbrief.show .tierdaten div.videothings video {
+	max-height: 450px;
+	box-shadow: 0 0 3em #000;
+	background: #fff;
+}
+
+.tiersteckbrief.show .landkarte {
+	width: 350px;
+	height: 410px;
+	z-index: -1;
+	background: transparent url(../img/karte.png) no-repeat 0 0;
+	-webkit-transform: rotate(16deg);
+	-moz-transform: rotate(16deg);
+	position: absolute;
+	top: 6%;
+	right: -4%;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	text-indent: -9999px;
+}
+
+.tiersteckbrief.show .video:hover {
+	top: -2%;
+	right: 0;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+}
+
+.tiersteckbrief.show .landkarte:hover {
+	top: 4%;
+	right: -6%;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+}
+
+#input form {
+	margin: 1.5em 0;
+}
+
+#input form.success input {
+	background: #fff !important;
+	outline: .25em solid rgba(0, 120, 40, .75);
+	color: #007828;
+}

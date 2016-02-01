@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Wildes Afrika</title>
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|Berkshire+Swash'>
+		<link rel="stylesheet" href="setup/css/default.css">
+		<script src="setup/js/soundmanager2-nodebug-jsmin.js"></script>
+		<script src="setup/js/mp3-player-button.js"></script>
+		<script>
+			soundManager.useFlashBlock = false;
+			soundManager.url = 'setup/swf/';
+		</script>
+	</head>
+	<body class="impress-not-supported">
+		<p style="position: absolute; bottom: 0;left: 0; font-size: .75em; color: #ccc;margin: 0"><a style="opacity: .5; color: #aaa;" href="setup/html/impressum.html">Impressum</a></p>
+	<div class="giraffeMain" data-length="0"><img src="setup/img/giraffe.png" alt="Giraffe"></div>
+	<div class="zweig" data-length="0"><img src="setup/img/zweig.png"></div>
+	<div class="giraffeHelp">
+		<div class="bubble">
+			<p></p>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="tiersteckbrief"></div>
+
+		<div class="aux">
+
+			<p class="aux-breadcrumb">
+				<a class="icon back" href="#">Zurück</a>
+			</p>
+
+			<p id="mainSound" class="aux-controls">
+				<a class="icon music" href="#">Audio pausieren</a>
+				<a class="icon help" href="#help">Gerald rufen</a>
+			</p>
+
+		</div>
+
+		<div id="impress">
+
+			<div id="introVomIntro" class="step" data-y="-3000">
+				<img src="setup/img/intro.png" style="display: block; margin: auto">
+				<p>Leertaste, ↓ oder → drücken</p>
+			</div>
+
+			<div id="intro" class="step" data-y="-1500">
+				<div class="bubble">
+					<h1>Hallo, willkommen im wilden Afrika!</h1>
+					<p>Schau’ dich um und lerne ein paar exotische Tiere kennen. Keine Angst, dir kann nichts passieren.</p>
+					<p>Ich bin die <strong>Giraffe Gerald</strong> und begleite dich auf deiner Reise. Wenn du Hilfe brauchst, ruf mich jederzeit, indem du auf das <strong>Fragezeichen</strong> rechts oben klickst.</p>
+					<p>Spiele und verhilf mir so zu meinem <span>Essen</span>!</p>
+					<p class="linkToMainMenu"><a href="#mainMenu"><img src="setup/img/btn_start.png" alt="Start"></a></p>
+				</div>
+
+			</div>
+
+			<div id="mainMenu" class="step">
+				<ul>
+					<li class="entdecken">
+						<p>Tauche ein in verschiedene Regionen Afrikas und <strong>lerne heimische Tiere und ihre Stimmen kennen</strong>.</p>
+						<a href="#entdecken"><img src="setup/img/btn_entdecken.png" alt="Entdecken"></a>
+					</li>
+					<li class="spielen">
+						<p>Prüfe dein neu gewonnenes Wissen, indem du es spielerisch auf die Probe stellst. <strong>Gerald hat Hunger!</strong></p>
+						<a href="#spielen"><img src="setup/img/btn_spielen.png" alt="Spielen"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="entdecken" class="step" data-x="-1500" data-z="1000">
+				<h2>Afrika entdecken</h2>
+				<p><img src="setup/img/afrika-umriss.png"></p>
+				<ul>
+					<li><a href="#dschungel">Dschungel</a></li>
+					<li><a href="#wueste">Wüste</a></li>
+					<li><a href="#savanne">Savanne</a></li>
+				</ul>
+			</div>
+
+			<div id="dschungel" class="step" data-x="-3000" data-y="-1000" data-z="2000">
+
+				<ul class="tiersteckbriefe">
+					<li><a href="#gorilla" class="gorilla"><img src="setup/img/tiere/gorilla-thumb.jpg" alt="Gorilla"></a></li>
+					<li><a href="#nashorn" class="nashorn"><img src="setup/img/tiere/nashorn-thumb.jpg" alt="Nashorn"></a></li>
+					<li><a href="#hyaene" class="hyaene"><img src="setup/img/tiere/hyaene-thumb.jpg" alt="Hyäne"></a></li>
+					<li><a href="#schimpanse" class="schimpanse"><img src="setup/img/tiere/schimpanse-thumb.jpg" alt="Schimpanse"></a></li>
+					<li><a href="#adler" class="adler"><img src="setup/img/tiere/adler-thumb.jpg" alt="Adler"></a></li>
+				</ul>
+			</div>
+
+			<div id="wueste" class="step" data-x="-3000" data-y="0" data-z="2000">
+				<ul class="tiersteckbriefe">
+					<li><a href="#dromedar" class="dromedar"><img src="setup/img/tiere/dromedar-thumb.jpg" alt="Dromedar"></a></li>
+					<li><a href="#skorpion" class="skorpion"><img src="setup/img/tiere/skorpion-thumb.jpg" alt="Skorpion"></a></li>
+					<li><a href="#geier" class="geier"><img src="setup/img/tiere/geier-thumb.jpg" alt="Geier"></a></li>
+					<li><a href="#wuestenfuchs" class="wuestenfuchs"><img src="setup/img/tiere/wuestenfuchs-thumb.jpg" alt="Wüstenfuchs"></a></li>
+				</ul>
+			</div>
+
+			<div id="savanne" class="step" data-x="-3000" data-y="1000" data-z="2000">
+				<ul class="tiersteckbriefe">
+					<li><a href="#elefant" class="elefant"><img src="setup/img/tiere/elefant-thumb.jpg" alt="Elefant"></a></li>
+					<li><a href="#bueffel" class="bueffel"><img src="setup/img/tiere/bueffel-thumb.jpg" alt="Büffel"></a></li>
+					<li><a href="#antilope" class="antilope"><img src="setup/img/tiere/antilope-thumb.jpg" alt="Antilope"></a></li>
+					<li><a href="#erdmaennchen" class="erdmaennchen"><img src="setup/img/tiere/erdmaennchen-thumb.jpg" alt="Erdmännchen"></a></li>
+					<li><a href="#zebra" class="zebra"><img src="setup/img/tiere/zebra-thumb.jpg" alt="Zebra"></a></li>
+					<li><a href="#loewe" class="loewe"><img src="setup/img/tiere/loewe-thumb.jpg" alt="Löwe"></a></li>
+					<li><a href="#giraffe" class="giraffe"><img src="setup/img/tiere/giraffe-thumb.jpg" alt="Giraffe"></a></li>
+				</ul>
+			</div>
+
+			<div id="spielen" class="step" data-x="1500" data-z="1000">
+				<ul>
+					<li class="tiere-raten">
+						<a href="#bilder-erraten"><img src="setup/img/btn_tiereraten.png" alt="Tiere raten"></a>
+					</li>
+					<li class="schatten-raten">
+						<a href="#formen-erkennen"><img src="setup/img/btn_schattenraten.png" alt="Schatten raten"></a>
+					</li>
+					<li class="stimmen-raten">
+						<a href="#geraeusche-zuordnen"><img src="setup/img/btn_stimmenraten.png" alt="Stimmen raten"></a>
+					</li>
+					<li class="input-spiel">
+						<a href="#input"><img src="setup/img/btn_koenigsdisziplin.png" alt="Königsdisziplin"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="bilder-erraten" class="step" data-x="4500" data-y="-1500" data-z="3000">
+				<div style="position: relative; width: 100%; height: 100%">
+				<ul id="cards" class="cf">
+					<li><div class="1" data-id="1a"></div></li>
+					<li><div class="1" data-id="1b"></div></li>
+					<li><div class="2" data-id="2a"></div></li>
+					<li><div class="2" data-id="2b"></div></li>
+					<li><div class="3" data-id="3a"></div></li>
+					<li><div class="3" data-id="3b"></div></li>
+					<li><div class="4" data-id="4a"></div></li>
+					<li><div class="4" data-id="4b"></div></li>
+					<li><div class="5" data-id="5a"></div></li>
+					<li><div class="5" data-id="5b"></div></li>
+					<li><div class="6" data-id="6a"></div></li>
+					<li><div class="6" data-id="6b"></div></li>
+					<li><div class="7" data-id="7a"></div></li>
+					<li><div class="7" data-id="7b"></div></li>
+					<li><div class="8" data-id="8a"></div></li>
+					<li><div class="8" data-id="8b"></div></li>
+					<li><div class="9" data-id="9a"></div></li>
+					<li><div class="9" data-id="9b"></div></li>
+					<li><div class="10" data-id="10a"></div></li>
+					<li><div class="10" data-id="10b"></div></li>
+					<li><div class="11" data-id="11a"></div></li>
+					<li><div class="11" data-id="11b"></div></li>
+					<li><div class="12" data-id="12a"></div></li>
+					<li><div class="12" data-id="12b"></div></li>
+					<li><div class="13" data-id="13a"></div></li>
+					<li><div class="13" data-id="13b"></div></li>
+					<li><div class="14" data-id="14a"></div></li>
+					<li><div class="14" data-id="14b"></div></li>
+					<li><div class="15" data-id="15a"></div></li>
+					<li><div class="15" data-id="15b"></div></li>
+					<li><div class="16" data-id="16a"></div></li>
+					<li><div class="16" data-id="16b"></div></li>
+				</ul>
+
+				<p style="position: absolute; bottom: 0; left: .2em"><a class="icon reload" href="#" id="reset">Karten neu mischen</a></p>
+			</div>
+			</div>
+
+			<div id="formen-erkennen" class="step" data-x="3000" data-y="0" data-z="2000">
+				<div class="cf" style="margin-top: 6em">
+					<a style="float: left;margin: -.5em 1em 0 0" class="icon reload" href="#reload">Neu laden</a><h3>Wie klingt ein <span class="tiername"></span>?</h3>
+					<img src="" alt="">
+					<form>
+						<ul>
+							<li><input type='radio' name='radio_group2'><span data-animal=""></span></li>
+							<li><input type='radio' name='radio_group2'><span data-animal=""></span></li>
+							<li><input type='radio' name='radio_group2'><span data-animal=""></span></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+
+			<div id="geraeusche-zuordnen" class="step" data-x="3000" data-y="1000" data-z="2000">
+				<div style="margin-top: 6em">
+					<a style="float: left;margin: -.5em 1em 0 0" class="icon reload" href="#reload">Neu laden</a><h3></h3>
+					<form>
+						<ul>
+							<li><input type='radio' name='radio_group'><a class='icon sound' href='#sound' data-animal=""></a></li>
+							<li><input type='radio' name='radio_group'><a class='icon sound' href='#sound' data-animal=""></a></li>
+							<li><input type='radio' name='radio_group'><a class='icon sound' href='#sound' data-animal=""></a></li>
+						</ul>
+					</form>
+				</div>
+
+			</div>
+
+			<div id="input" class="step" data-x="3000" data-y="2000" data-z="2000">
+				<div style="margin-top: 8em">
+					<form>
+						<input style="display: inline-block" type="text" x-webkit-speech><a class="icon reload" href="#reload" style="display: inline-block; margin: 0 0 0 1.5em;position: relative; top: -2px">Neu laden</a>
+					</form>
+					<div class="game"></div>
+				</div>
+
+			</div>
+
+			<div id="overview" class="step" data-scale="10"></div>
+
+		</div>
+
+    	<script src="setup/js/jquery-1.7.2.min.js"></script>
+		<script src="setup/js/impress.js"></script>
+		<script src="setup/js/default.js"></script>
+	</body>
+</html>
